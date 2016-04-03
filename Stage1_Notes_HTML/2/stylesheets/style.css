@@ -1,0 +1,103 @@
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #808080;
+	color: #CCCCCC;
+}
+
+header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	padding: 0px 0px 5px 40px;
+	max-width: 600px;
+	background-color: #CCC;
+	border-bottom-style: solid;
+	border-bottom-width:2px;
+	border-color: #808080;
+}
+
+
+header a{
+	text-decoration: none;
+	color: #808080;
+}
+
+h2, h3 {
+	font-family: courier, monospace, sans-serif;
+}
+
+h1{
+	padding: 0 40px;
+	line-height: 50px;
+}
+
+h2{
+	line-height: 50px;
+}
+
+h1 .num{
+	background-color: #CCCCCC;
+	color: #808080;
+
+}
+
+h2 .num{
+	background-color: #808080;
+	color: #CCCCCC;
+}
+
+.num{
+	display: inline-block;
+	font-size: smaller;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	text-align: center;
+}
+
+
+#logo{
+	position: relative;
+	top: 5px;
+	height: 1.2em;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+#logo:hover{
+		-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+
+.lesson{
+	max-width: 600px;
+	margin: 0px auto 0px auto;
+	padding-top: 25px;
+
+
+}
+
+
+.topic{
+	background-color: #CCCCCC;
+	color: #808080;
+	padding: 20px 40px;
+	margin: 20px auto;
+	display: block;
+}
+
+#menu{
+	display: inline;
+}
+
+#menu li{
+	display: inline;
+}
