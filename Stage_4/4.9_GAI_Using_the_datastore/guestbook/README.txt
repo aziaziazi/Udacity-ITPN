@@ -1,0 +1,1 @@
+https://cloud.google.com/appengine/docs/python/gettingstartedpython27/usingdatastore
