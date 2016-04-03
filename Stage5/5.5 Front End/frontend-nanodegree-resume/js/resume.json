@@ -1,0 +1,82 @@
+var bio = {
+	"hName" : "Camille Gabrieli",
+	"role" : "Developer",
+	"contacts" : {
+		"email" : "camille.gabrieli@gmail.com",
+		"github" : "https://github.com/aziaziazi",
+		"gsm" : "0491528267",
+		"location" : "Brussels"
+	},
+	"welcomeMessage" : "Thanks for reading my resume!",
+	"skills" : [
+		"product design", "front end", "3d printing"
+		],
+	"bioPic" : "images/fry.jpg"
+}
+
+var work = {
+	"jobs" : [
+		{
+			"employer" : "Freelance",
+			"title" : "Designer",
+			"dates" : "January 2013 - Future",
+			"location" : "Bruxelles",
+			"description" : "Exploring the FabLab and exploring the FabLab and exploring the FabLab and exploring the FabLab and exploring the FabLab"
+		},
+		{
+			"employer" : "AREP",
+			"title" : "Designer",
+			"dates" : "2009 - 2012",
+			"location" : "Paris",
+			"description" : "Transportation stuff, orientation guide and waiting funmaker"
+		}
+	]
+}
+
+var education = {
+	"schools" : [
+		{
+			"name" : "École Boulle",
+			"degree" : "Diplôme des Métiers d'Art",
+			"dates" : 2009,
+			"location" : "Paris",
+			"major" : "Ébénisterie",
+			"url" : "http://www.ecole-boulle.org/"
+
+		},
+		{
+			"name" : "LEP Revel",
+			"degree" : "Bac Pro",
+			"dates" : 2007,
+			"location" : "Revel",
+			"major" : "Ébénisterie",
+			"url" : "http://ameublement-revel.entmip.fr/"
+		}
+	],
+	"onlineCourses" : [
+		{
+			"title" : "Intro to Programming",
+			"school" : "Udacity",
+			"dates" : 2016,
+			"url" : "https://www.udacity.com/course/intro-to-programming--ud000"
+		}
+	]
+}
+
+var projects = {
+ 	"projects" : [
+		{
+			"title" : "pinhole camera",
+			"date" : "2014",
+			"description" : "this is a carboard analogic camera",
+			"image" : ["images/197x148.gif"]
+		},
+			{
+			"title" : "pocessing workshop",
+			"date" : "2015",
+			"description" : "interactive color spawner",
+			"image" : ["images/output-113.png", "images/IMG_1108.jpg"]
+		}
+	]
+}
+

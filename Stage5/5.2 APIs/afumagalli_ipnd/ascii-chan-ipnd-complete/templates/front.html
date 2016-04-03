@@ -1,0 +1,29 @@
+<body>
+<h1>/ascii/</h1>
+<form method="post">
+	<label for="title"><b>title</b></label><br>
+	<input type="text" name="title"></input>
+	<br>
+	<br>
+
+	<label for="art"><b>art</b></label><br>
+	<textarea type="text" name="art"></textarea>
+	<br>
+
+	<input type="submit"></input>
+</form>
+
+{% if img_url %}
+{{ img_url|safe }}
+{% endif %}
+<h3>Coordinates</h3>
+<p>Lon : {{ coLon }}</p>
+<p>Lat : {{ coLat }}</p>
+
+{% for a in arts %}
+
+<h2>{{ a.title }}</h2>
+<pre>{{ a.art }}</pre>
+
+{% endfor %}
+</body>
