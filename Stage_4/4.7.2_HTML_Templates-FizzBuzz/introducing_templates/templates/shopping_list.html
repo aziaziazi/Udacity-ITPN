@@ -1,0 +1,18 @@
+<form>
+	<h2>Add a Food Steve</h2>
+	<input type="text" name="n">
+	<button>Add</button>
+
+	<!-- {% if n == "Steve" %}
+		<h2>Hello, {{n}}</h2>
+	{% else %}
+	{% endif %}
+ -->
+	{% if n == "Steve" %}
+		<h2>Hello, {{n}}</h2>
+	{% else %}
+	{% endif %}
+
+	<a href="/fizzbuzz?n=0">FizzBuzz !</a>
+
+</form>

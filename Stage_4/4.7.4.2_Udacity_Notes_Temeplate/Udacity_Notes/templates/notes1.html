@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+
+    <div class="lesson">
+        <h1><span class="num">1</span> Start with HTML</h1>
+        <div class="topic">
+            <h2><span class="num">1.1</span> The basics of Web and HTML</h2>
+            <div>
+                <h3>Definition</h3>
+                <p>HTML = Hyper Text Markup Language.</p>
+                <p>Text Content : What we see.<br>Markup : Formating.<br>References & links : Images, videos, links to other pages...</p>
+                <p>It's made of elements, with an oppening Tag, Content, Closing Tag. The tag can embed attributes with values, like for an image : the source (src) and alternative content (alt).</p>
+            </div>
+            <div>
+                <h3>Inline/Bloc</h3>
+                <p>Inline elements are like a line of text :</p>
+                <ul>
+                    <li>span</li>
+                    <li>br</li>
+                    <li>em</li>
+                    <li>img</li>
+                    <li>a</li>
+                    <li>i</li>
+                    <li>strong</li>
+                    <li>em</li>
+                </ul>
+                <p>Blocs have a width and a heigth :</p>
+                <ul>
+                    <li>div</li>
+                    <li>h1</li>
+                    <li>h2...</li>
+                    <li>p</li>
+                    <li>form</li>
+                </ul>
+                <p>An element can be switched to inline/bloc with css property (to confirm ?)</p>
+            </div>
+        </div>
+        <div class="topic">
+            <h2><span class="num">1.2</span> Structured document</h2>
+            <div>
+                <div>
+                    <h3>DOM</h3>
+                    <p>Document Object Model. Means the page should have a tree-like structure. This structure is made by the html. The css style it.</p>
+                    <p>div and span are the two main container to build the structure, but i also can use footer, header, article, section, nav, aside...</p>
+                </div>
+                <div>
+                    <h3>Boxify</h3>
+                    <p>Everythink is a BOX ! Boxify a layout by organising the page with main boxes organised themeselfes with other boxes and boxes inside. Boxify with pencil, sicors, photoshop...</p>
+                </div>
+                <div>
+                    <h3>Code &gt; Test &gt; Refine</h3>
+                    <p>Normal workflow :</p>
+                    <ol>
+                        <li>Boxify the design</li>
+                        <li>Construct with semantic elements (h1, h2, article...)</li>
+                        <li>Write html</li>
+                        <li>Style it with CSS, big to small parts</li>
+                        <li>Fix ! Go back html to css...</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="topic">
+            <h2><span class="num">1.3</span> Adding CSS Style</h2>
+            <div>
+                <h3>Cascading Style Sheet</h3>
+                <p>The styles applied to an element is applied to every child element. They got "inherited" style for their parents.<br>That applied for text, not blocs (inline/bloc ?)</p>
+                <p>Tags already contains some styles. For exemple, h1 is 2em, bold, margin 0,67em... It can be change, but it's use the best tag at first.</p>
+            </div>
+                <div>
+                <h3>Avoid repetition</h3>
+                <p>It's good to avaid repetition when programming. If I want a style be applied for several elements, I should create a class ! I also can create several classes and mix them with the shared an non-shared properties (cf trafic lights : one commun class for make them round, one for each for the colors).</p>
+            </div>
+            <div>
+                <h3>Selectors</h3>
+                <p>
+                    There's many selectors for styling. The <a href="https://css-tricks.com/specifics-on-css-specificity/">more specific</a> will affect instead of the less specific. The list is ordered by specificity :
+                    </p>
+                    <ul>
+                        <li><b>!important</b> place just after the declaration overide anythink. Use in extrame case of need.</li>
+                        <li><b>inline style</b> is also very powerfull and no recommanded because it mix structure and style.</li>
+                        <li><b>ID</b> is specific and can be use only once.</li>
+                        <li><b>Class / Attribute</b> are the most recomanded. Class is well know, but attribute is better when the attribute is enought specifical because you don't have to write a class (avoid repetition).</li>
+                        <li><b>Element tags</b> like h1, div, img, ul... Good to use in addition with classes.</li>
+                    </ul>
+                    <p>
+                    You can combine selectors. The style will apply to elements validating all of them. See <a href="https://css-tricks.com/how-css-selectors-work/">this CSS tricks post</a> for selectors generalities.
+                </p>
+            </div>
+
+            <div>
+                <h3>Boxes strucure</h3>
+                <p>A bloc element (and inline ?) has a size defined by :</p>
+                    <ul>
+                        <li>Content</li>
+                        <li>Padding (space around content)</li>
+                        <li>Border (border weight)</li>
+                        <li>Margin (space around border)</li>
+                    </ul>
+                <p>If I have a padding and border, i'ts hard to know and manage the final size of the box. I can use the css propertie {box-sizing : border-box;}. Warning : use webkit, moz, ms... for compatibility. It's also recomanded to use percentage (%) when possible.</p>
+            </div>
+            <div>
+                <h3>Flex-Box</h3>
+                <p>Blocs elements are 100% widht by default. I can allow them to align side by side with the propertie {display : flexbox} applied to the parent element. Don't foget to reduce the size of child smaller than 100% (80%, max-width, ...). A complete guide to floxbox in <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks</a>.<br>Check compatibility !</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

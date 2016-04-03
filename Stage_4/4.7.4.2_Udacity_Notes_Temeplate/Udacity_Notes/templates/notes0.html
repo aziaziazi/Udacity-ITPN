@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="lesson">
+		<h1><span class="num">0</span> Intro</h1>
+		<div class="topic">
+			<h2><span class="num">0.1</span> Think like a programmer</h2>
+			<div>
+				<h3>Procedural Thinking</h3>
+				<p>Taking a big problem and breaking the solution in several steps.<br>Procedural thinking involves creating perfectly clear and unambiguous instructions for a computer to follow.<br>It may be easy to tell a person how to sort a deck of cards, but getting a computer to do that requires more thought. But once I've learned to think this way I'll find that computers can do it much faster.</p>
+			</div>
+			<div>
+				<h3>Abstract Thinking</h3>
+				<p>Finding similarities, or generalities amongst differents concepts.<br>If 1+1=2, therefore one apple plus one apple gives two apples. I can also use abstraction to avoïd repetition with classes ( in stylesheets) or use an element for another porpose than the forstly inteded. (cf Kim's memories homework</p>
+			</div>
+			<div>
+				<h3>Debugging</h3>
+				<p>Mistakes is anavoidable part of programming, I have to systematicaly fix them. Ussually the process looks like this:
+				</p>
+				<ul>
+					<li>List the evidences : What (makes this programm) fails ?</li>
+					<li>Make theories about causes</li>
+					<li>Test the theories</li>
+					<li>Fix the problem :p</li>
+				</ul>
+
+			</div>
+			<div>
+				<h3>Technological Empathy</h3>
+				<p>How the computeur see thinks, how it do works.<br>To programm anything substantial, it's important to understant what a computer is, what it's good and bad at doing. A computeur is a tool, a program and a programming language also, I must know them.</p>
+			</div>
+			<div>			<h3>Systems Thinking</h3>
+				<p>Take one big idea and break it down in smaller pieces.<br>Create a plan (on paper) for how my program will work. It leads to see the big-picture, how the different pieces can/could work together and make decisions.</p>
+			</div>
+		</div>
+
+		<div class="topic">
+			<h2><span class="num">0.2</span> Learning.Methodologie</h2>
+			<div>
+				<div>
+					<h3>I can't memorize everything.</h3>
+					<p>No worries, all I have to do is to understand the big lines and how the systems works. Then I can find hatever I need on google (like "scr" ok "href" for link and image ?)</p>
+				</div>
+				<div>
+					<h3>Newbie to Expert</h3>
+					<ul>
+						<li>Ignorance. I don't know and I don't know what I should know.</li>
+						<li>Understanding. Know what we're talking about.</li>
+						<li>Knowledge. Know how to do things and how to learn to do others.</li>
+						<li>Expertise. Master it, automation and deep knowledges.</li>
+					</ul>
+					<p>Knowledge line : Unstructured knowledges. Relfecion leads to structured and usefull knowledges</p>
+					<p>Skills line : Idea. Practice makes it possible to concretise.</p>
+				</div>
+
+				<!--
+				<div>
+					<h3></h3>
+					<p></p>
+				</div>
+				-->
+			</div>
+		</div>
+		<div class="topic">
+			<h2><span class="num">0.3</span> Tips</h2>
+			<ul>
+				<li>before head : !doctype html</li>
+				<li>Inside head : meta charset="utf-8"(for encoding, always use UTF-8)</li>
+				<li>Inside head : link rel="stylesheet" href="style.css"<br>Don't use type="text/css". Same for javascript.</li>
+				<li>Balise and attributes : lower case</li>
+				<li>Trailing white spaces : automation with json properti aded to sublime text</li>
+				<li>Alternative content for disable people and CEO</li>
+				<li>Comment for me and for others :<br> html : &lt;!--comment--&gt;<br>css : /*comment*/</li>
+				<li>Use <a href="http://necolas.github.io/normalize.css/"></a>normalize to help consistency between browsers. </li>
+				<li>Use <a href="http://jigsaw.w3.org/css-validator/#validate_by_input"> CSS validator</a> and <a href="https://validator.w3.org/nu/#textarea"> HTML validators to check errors.</a></li>
+			</ul>
+		</div>
+	</div>
+
+{% endblock %}
+
+
