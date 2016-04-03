@@ -1,0 +1,14 @@
+notes 3.4a
+
+b
+class >> python keyword for new class
+instance >> instance of the class (or object)
+Constructor >> __init__ create a new instance, create space memory or initialyze
+Self >> the instance name created
+instance variables >> variables unique for each instance of defined class
+instance methods : founction defined in a class and assosiated with an instance
+
+new_instance = package.class(arguments) >> call the init founction to initialize a new object (instance). Arguments becomes "instance variables"
+
+Google styleguide for python >> conventions for better programming
+
